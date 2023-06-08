@@ -1,15 +1,14 @@
 import { gql } from "@apollo/client";
 import Link from "next/link";
 import style from "./header.module.css";
-import style from "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css";
 
 export default function Header({ siteTitle, siteDescription, menuItems }) {
   return (
     <header className={style.header}>
       <div className="container">
         <Link href="/" className={style.brand}>
-          <h2 className={style.siteTitle}>TEST::{siteTitle}</h2>
-          <p class="text-danger">TEST::{siteDescription}</p>
+          <h2 className={style.siteTitle}>{siteTitle}</h2>
+          <p className={style.siteDescription}>{siteDescription}</p>
         </Link>
 
         <nav className={style.nav}>
