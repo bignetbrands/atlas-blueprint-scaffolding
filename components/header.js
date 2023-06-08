@@ -8,7 +8,7 @@ export default function Header({ siteTitle, siteDescription, menuItems }) {
     <header className={style.header}>
       <div className="container">
         <Link href="/" className={style.brand}>
-          <h2 className={style.siteTitle}>{siteTitle}</h2>
+          <h2 className={style.siteTitle}>TEST::{siteTitle}</h2>
           <p class="text-danger">TEST::{siteDescription}</p>
         </Link>
 
